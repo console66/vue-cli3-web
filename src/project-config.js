@@ -8,29 +8,11 @@ var exports = {
     },
     // base url
     get baseUrl () {
-        const test = 'http://192.172.9.85:8002/server';
-        const prod = 'http://192.172.9.85:8002/server';
+        const test = '';
+        const prod = '';
         return this.isTest ? test : prod;
     },
-    // base url
-    get imgUrl () {
-        const test = 'http://hchysj-xpl.oss-cn-hangzhou.aliyuncs.com';
-        const prod = 'http://hchysj-xpl.oss-cn-hangzhou.aliyuncs.com';
-        return this.isTest ? test : prod;
-    },
-    // 模板
-    get model () {
-        return [
-            {
-                name: '素材中心',
-                id: 1
-            },
-            {
-                name: '模板中心',
-                id: 2
-            }
-           ]
-    }
+
 };
 
 module.exports = exports;
